@@ -1,0 +1,1100 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background: #FBFBFB;
+}
+
+/* Navbar start*/
+
+nav {
+    height: 80px;
+    background-color: #ffff;
+    color: black;
+    box-shadow: 2px 2px 5px #cccccc;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    
+}
+
+nav h2{
+    line-height: 80px;
+    display: inline-block;
+    margin-left: 200px;
+    font-weight: bold;
+}
+
+.menu {
+    float: right;
+    margin-right: 200px;
+    list-style: none;
+}
+
+.menu  li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 10px;
+}
+
+.menu  li a{
+    text-decoration: none;
+    font-weight: lighter;
+    color: black;
+}
+
+ .menu  li a:hover{
+    color: sienna;
+}
+
+label #btn, label #close{
+    color: black;
+    font-size: 30px;
+    float: right;
+    margin-right: 40px;
+    line-height: 80px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+/* Navbar end*/
+
+/* Home start*/
+
+.home{
+    padding: 0 25%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    /* margin:0 10%; */
+    margin-top: 7%;
+    margin-bottom: 125px;
+    /* background-color: aqua; */
+    height: 70vh;
+    
+}
+.photo{
+    justify-content: center;
+}
+.photo img{
+    justify-content: center;
+    width: 312px;
+    margin-top: 5px;
+    /* margin-right: 80px; */
+    background-color: crimson;
+    filter: grayscale(1);
+    transition: all 1s;
+}
+
+.photo img:hover{
+    filter: none;
+    transform: scale(1.1);
+}
+
+.content{
+    margin-left: 24px;
+    align-content: center;
+    /* background-color: rebeccapurple; */
+}
+
+ul li span{
+    font-size: 26px;
+}
+
+/* Home end*/
+
+/* Home Teks berjalan */
+.dynamic-text{
+    width: 300px;
+    height: 70px;
+    line-height: 80px;
+    overflow: hidden;
+    
+}
+
+.dynamic-text li{
+    list-style: none;
+    color: #212529;
+    position: relative;
+    top: 0;
+    animation: slide 12s steps(4) infinite;
+}
+
+@keyframes slide {
+    100%{
+        top: -360px;
+    }
+}
+
+.dynamic-text li span{
+    position: relative;
+    margin: 5px 0;
+    line-height: 80px;
+
+}
+
+.dynamic-text li span::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    height: 70px;
+    width: 100%;
+    background: #FBFBFB;
+    border-left: 2px solid #495057;
+    animation: typing 3s steps(14) infinite;
+}
+
+@keyframes typing {
+    40%,
+    60%{
+        left: calc(100% + 30px);
+    }
+
+    100%{
+        left: 0;
+    }
+}
+
+/* Home Teks berjalan end*/
+
+/* Home button  start*/
+
+.content .btn{
+    display: flex;
+    margin-top: 10px;
+}
+
+.btn button{
+    height: 35px;
+    width: 120px;
+    background-color: sienna;
+    border: none;
+    border-radius: 4px;
+    color: white;
+}
+
+.btn .cv{
+    margin-right: 20px;
+}
+
+/* Home button end*/
+
+/* about start */
+.about{
+    margin-bottom: 40px;
+}
+.about h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.about .deskripsi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about .deskripsi img{
+    width: 300px;
+    margin-right: 30px;
+}
+
+.about .deskripsi p{
+    width: 400px;
+    text-align: justify;
+    
+}
+
+.about .edu{
+    margin-top: 100px;
+}
+/* about end */
+
+/* education  start*/
+.education{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+.education .kanan{
+    margin-top: 150px;
+    margin-left: 10px;
+}
+.education .kiri{
+    margin-right: 10px;
+}
+.education .kiri .sd{
+    margin-top: 50px;
+}
+.education .kiri .smk{
+    margin-top: 200px;
+}
+
+.education .kanan .kuliah{
+    margin-top: 250px;
+}
+ .bentuk .garis{
+   height: 550px;
+    width: 5px;
+    background-color: black;
+    position: absolute;
+    margin-left: 5px;
+    border-radius: 2px;
+}
+/* education end */
+
+/* lingkaran start */
+   
+    .bentuk .lingkaran1{
+        width: 15px;
+        height: 15px;
+        background-color: sienna;
+        border-radius: 50%;
+        margin-top: 56px;
+        position: relative;
+        
+    }
+    .bentuk .lingkaran2{
+        width: 15px;
+        height: 15px;
+        background-color: sienna;
+        border-radius: 50%;
+        margin-top: 85px;
+        position: relative;
+        
+    }
+    .bentuk .lingkaran3{
+        width: 15px;
+        height: 15px;
+        background-color: sienna;
+        border-radius: 50%;
+        margin-top: 136px;
+        position: relative;
+        
+    }
+    .bentuk .lingkaran4{
+        width: 15px;
+        height: 15px;
+        background-color: sienna;
+        border-radius: 50%;
+        margin-top: 136px;
+        position: relative;
+        
+    }
+/* lingkaran end */
+
+/* Sertifikat start */
+.sertifikat .img-sertifikat{
+    display: flex;
+    padding: 0 3%;
+    margin: 30px 0;
+    margin-left: 20px;
+    justify-content: space-evenly;
+    margin-left: 50px;
+   
+    flex-wrap: wrap;
+}
+
+.sertifikat .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 350px;
+    margin-bottom: 30px;
+    
+  }
+.sertifikat .card img{
+    width: 350px;
+    height: 250px;
+    
+  }
+.sertifikat .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.sertifikat .container {
+    padding: 2px 16px;
+  }
+
+.sertifikat .card .btn-card{
+    padding: 2px 16px;
+    margin-top: 5px;
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sertifikat .card .btn-card button{
+    width: 100px;
+    height: 30px;
+    margin-bottom: 15px;
+    background-color: sienna;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+/* sertifikat end */
+
+/* Skills  start*/
+.skill{
+    height: 90vh;
+}
+.skill h2{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.skill .kemampuan{
+    display: flex;
+    justify-content: space-around;
+    margin:  0 20%;
+    margin-top: 60px;
+    flex-wrap: wrap;
+   
+}
+
+.skill .kemampuan img{
+    width: 150px;
+    margin-right: 20px;
+    filter: grayscale(1);
+    margin-bottom: 50px;
+}
+
+.skill .kemampuan img:hover{
+    filter: none;
+}
+
+.sertifikat .btn-more-sertifikat{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+   
+}
+.sertifikat .btn-more-sertifikat button{
+    height: 35px;
+    width: 150px;
+    text-align: center;
+    margin-left: 8px;
+    background-color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+.sertifikat .btn-more-sertifikat .see{
+    background-color: sienna;
+    color: white;
+}
+
+.sertifikat .btn-more-sertifikat .see:hover{
+    background-color: #fff;
+    color: sienna;
+}
+
+/* skills end */
+
+/* Project start*/
+
+.project h2{
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.project .daftar{
+    display: flex;
+    padding: 0 3%;
+    margin: 30px 0;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.project .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 350px;
+    
+  }
+  .project .card img{
+    width: 350px;
+    height: 250px;
+    
+  }
+.project .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.project .container {
+    padding: 2px 16px;
+  }
+
+.project .card .btn-card{
+    padding: 2px 16px;
+    margin-top: 5px;
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.project .card .btn-card button{
+    width: 100px;
+    height: 30px;
+    margin-bottom: 15px;
+    background-color: sienna;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Project end */
+
+/* More Project Start*/
+
+.more{
+    background-color: rgb(102, 102, 102);
+    display: flex;
+    justify-content: space-evenly;
+    height: 90px;
+    align-items: center;
+    color: white;
+    margin: 0 20%;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 5px #797979;
+}
+.more h2{
+   
+    align-items: center;
+}
+.more .btn-more{
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+   
+}
+.more .btn-more button{
+    height: 35px;
+    width: 150px;
+    text-align: center;
+    margin-left: 8px;
+    background-color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.more .btn-more .see{
+    background-color: sienna;
+    color: white;
+}
+
+.more .btn-more .see:hover{
+    background-color: #fff;
+    color: sienna;
+}
+
+.more .btn-more .email-me:hover{
+    background-color: sienna;
+    color: white;
+}
+
+/* More Project end */
+
+/* Footer start*/
+.footer{
+    height: auto;
+    background-color: sienna;
+    
+}
+.footer .foot{
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    padding-top: 30px;
+}
+
+.thanks h2{
+    margin-bottom: 15px;
+}
+
+.info h2{
+    margin-bottom: 15px;
+}
+.footer .info p{
+    display: inline;
+}
+.footer .info i{
+    display: block;
+    margin-bottom: 15px;
+}
+
+.sosmed{
+    display: flex;    
+    
+}
+
+.sosmed a{
+    margin-right: 10px;
+    text-decoration: none;
+    color: sienna;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 18px;
+   
+   
+}
+
+.sosmed a i{
+   margin-top: 3px;
+}
+
+.sosmed a:hover{
+    color: white;
+    background-color:sienna;
+}
+
+.copy{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    border-top: 1px white solid;
+    width: 100%;
+    color: white;
+    height: 40px;
+    align-items: center;
+}
+
+/* Footer end */
+
+/* All Project start */
+.all-project .list-project{
+    display: flex;
+    padding: 0 3%;
+    margin: 30px 0;
+    justify-content: space-evenly;
+    margin-top: 7%;
+    flex-wrap: wrap;
+}
+
+.all-project .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 350px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    
+  }
+.all-project .card img{
+    width: 350px;
+    height: 250px;
+
+    
+  }
+.all-project .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+.all-project .container {
+    padding: 2px 16px;
+  }
+
+.all-project .card .btn-card{
+    padding: 2px 16px;
+    margin-top: 5px;
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.all-project .card .btn-card button{
+    width: 100px;
+    height: 30px;
+    margin-bottom: 15px;
+    background-color: sienna;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+/* All Project end */
+/* Add Project start */
+.add{
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 50px;
+    margin-top: 8%;
+  }
+.add h2{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.add input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .add  input[type=submit] {
+    width: 100%;
+    background-color: sienna;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+.add input[type=submit]:hover {
+    background-color: #495057;
+  }
+
+.logout a button{
+    width: 100px;
+    height: 30px;
+    margin-bottom: 15px;
+    background-color: sienna;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    float: right;
+    margin-right: 5px;
+    
+}
+
+.logout .add_sertifikat a{
+   
+    margin-bottom: 15px;
+   
+}
+
+.logout .add_project a{
+    margin-bottom: 15px;
+}
+
+/* Add Project end */
+
+/* All Sertifikat start */
+.semua-sertifikat .list-sertifikat{
+    display: flex;
+    padding: 0 3%;
+    margin: 30px 0;
+    justify-content: space-evenly;
+    margin-top: 7%;
+    flex-wrap: wrap;
+}
+
+.semua-sertifikat  .card {
+    /* Add shadows to create the "card" effect */
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 350px;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    
+  }
+  .semua-sertifikat  .card img{
+    width: 350px;
+    height: 250px;
+
+    
+  }
+  .semua-sertifikat  .card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+  }
+
+  .semua-sertifikat  .container {
+    padding: 2px 16px;
+  }
+
+  .semua-sertifikat  .card .btn-card{
+    padding: 2px 16px;
+    margin-top: 5px;
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.semua-sertifikat  .card .btn-card button{
+    width: 100px;
+    height: 30px;
+    margin-bottom: 15px;
+    background-color: sienna;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+
+/* All Sertifikat end */
+
+@media (max-width: 992px) {
+    label #btn{
+        display: block;
+    }
+
+    nav h2{
+        margin-left: 30px;
+    }
+
+    .menu{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        margin-right: 0;
+        right: -100%;
+        top: 80px;
+        background-color: #fff;
+        text-align: center;
+        transition: .5s;
+        z-index: 2;
+    }
+    .menu li{
+        display: block;
+        line-height: 10px;
+        margin: 50px 0;
+    }
+
+    #check:checked ~ ul{
+        right: 0;
+    }
+
+    #check:checked ~ label #btn{
+        display: none;
+    }
+
+    #check:checked ~ label #close{
+        display: block;
+    }
+
+    #home{
+       padding: 0 ;
+       margin:0 10%;
+       margin-top: 15%;
+      
+    }
+
+    .footer{
+        padding:0 5%;
+    }
+
+    .copy{
+        bottom: 0;
+    }
+
+    .project .daftar {
+     flex-wrap: wrap;
+        
+        
+    }
+
+    .project .daftar .card{
+      margin-bottom: 40px;
+      
+        
+    }
+
+    .more{
+        display: flex;
+        flex-direction: column;
+        
+    }
+   
+    .more .btn-more button{
+        margin-bottom: 10px;
+    }
+    #skill{
+       margin-bottom: 50px;
+       height: 70vh;
+       
+    }
+
+    #about .deskripsi{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #about .deskripsi img{
+       margin: 0;
+       margin-bottom: 20px;
+    }
+    #about .my-deskripsi p{
+        width: 450px;
+    }
+
+    .sertifikat .img-sertifikat{
+        margin: 0;
+    }
+
+    .all-project .list-project {
+        flex-wrap: wrap;
+        margin-top: 15%;
+           
+    }
+   
+    .all-project .list-project .card{
+         margin-bottom: 40px;
+         margin-right: 0;
+    }
+
+    .add{
+        margin-top: 15%;
+    }
+}
+
+@media  (max-width: 567px) {
+     #home{
+        flex-direction: column;
+        display: block;
+        position: relative;
+        margin-bottom: 50px;
+        margin-top: 120px;
+    }
+    .home .content{
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .btn {
+        display: flex;
+       justify-content: center;
+    }
+
+    .btn .cv{
+        margin: 0;
+        margin-right: 10px;
+    }
+    .content h3{
+        text-align: center;
+    }
+
+    .photo{
+        display: flex;
+    }
+
+    
+
+    .home .photo img{
+
+        width: 288px;
+        
+    }
+
+    .content .dynamic-text{
+        text-align: center;
+    }
+
+    .footer{
+        top: 100px;
+        position: relative;
+       
+    }
+    .footer .foot{
+        display: flex;
+       flex-direction: column;
+  
+    }
+
+    .project .more{
+        display: flex;
+        justify-content: center;
+        width: 95%;
+        height: 150px;
+        padding: 0;
+        margin: 0 2%;
+    }
+
+    .project .more .btn-more{
+        margin-top: 20px;
+    }
+    #skill{
+        height: 80vh;
+       
+    }
+
+    #skill .kemampuan{
+        flex-direction: row;
+        flex-wrap: wrap;
+       
+    }
+   
+    #skill .kemampuan img{
+       width: 90px;
+       
+    }
+
+    #about .deskripsi{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    #about .deskripsi img{
+       margin: 0;
+    }
+    #about .my-deskripsi p{
+        width: 350px;
+    }
+
+    .education{
+        margin: 0 auto;
+        padding: 0 5%;
+        margin-bottom: 150px;
+    }
+
+    .education  .kiri{
+        margin: 0;
+    }
+
+    .all-project .list-project {
+        flex-wrap: wrap;
+        margin-top: 28%;
+           
+    }
+   
+    .all-project .list-project .card{
+         margin-bottom: 40px;
+         margin-right: 0;
+           
+    }
+
+    .add{
+        margin-top: 25%;
+    }
+   
+}
+
+
+
+@media  (max-width: 320px) {
+    #skill{
+        margin-top: 20%;
+        margin-bottom: 60px;
+        height: 100vh;
+    }
+
+    #project .card {
+        width: 250px;
+     }
+
+     #project .card img{
+        width: 250px;
+     }
+     #about{
+        margin-top: 200px;
+     }
+     #about .deskripsi img{
+        margin: 0;
+        width: 250px;
+     }
+     #about .my-deskripsi p{
+         width: 290px;
+     }
+     .sertifikat .card {
+        width: 280px;
+     }
+
+     .sertifikat .card img{
+        width: 280px;
+     }
+
+     .more h2{
+        font-size: 20px;
+    }
+
+    .more .btn-more button{
+        width: 145px;
+        margin-left: 4px;
+    }
+
+    #all-project .list-project {
+        flex-wrap: wrap;
+        margin-top: 35%;
+           
+    }
+   
+    #all-project .list-project .card{
+         margin-bottom: 40px;
+         width: 280px;
+         margin-right: 0;
+           
+    }
+    #all-project .list-project .card img{
+        width: 280px;
+    }
+
+    .add{
+        margin-top: 30%;
+    }
+}
+
+@media  (max-width: 360px) {
+ 
+    #skill .kemampuan img{
+        width: 70px;
+        margin-right: 10px;
+        
+     }
+
+     #project .card {
+        width: 300px;
+     }
+
+     #project .card img{
+        width: 300px;
+     }
+
+     #about .my-deskripsi p{
+        width: 288px;
+    }
+
+    .sertifikat .card {
+        width: 300px;
+     }
+
+     .sertifikat .card img{
+        width: 300px;
+     }
+
+     #all-project .list-project {
+        flex-wrap: wrap;
+        margin-top: 30%;
+           
+    }
+   
+    #all-project .list-project .card{
+         margin-bottom: 40px;
+         width: 300px;
+         margin-right: 0;
+           
+    }
+    #all-project .list-project .card img{
+        width: 300px;
+    }
+
+
+}
